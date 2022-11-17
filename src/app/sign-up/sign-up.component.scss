@@ -1,0 +1,171 @@
+.login-main-container{
+    margin-top: 70px;
+ }
+ 
+ .title{
+     margin-top: 1.5rem;
+  text-align: center;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: .8rem;
+ }
+ .title-line-1{
+ font-size: 32px;
+ font-weight: 700;
+ color: rgba(13, 24, 117, 0.87);
+ margin-bottom: 1.8rem;
+ }
+ .title-line-2{
+     font-size: 24px;
+ font-weight: 400;
+ color: #aaa;
+ }
+ .title-line-3{
+     font-size: 24px;
+ font-weight: 400;
+ color: #aaa;
+ margin-bottom: 2rem;
+ }
+ 
+ 
+ 
+ .wit-logo{
+     display: flex;
+     justify-content: center;
+ }
+ 
+ 
+ 
+ .table-container{
+   display: grid;      
+   grid-gap: 5em;
+   grid-template-columns:  repeat(auto-fit , minmax(26rem ,1fr)) ;
+  padding-left: 1.5em;
+   background-color: #fff;
+ }
+ 
+ 
+ 
+ .login-card{
+     margin-left: calc(4rem + 2rem);
+     margin-top: 1.2rem;
+     width: 24.5em;
+     height:26rem;
+     -webkit-box-shadow: -1px 6px 25px -1px rgba(199,189,199,1);
+     -moz-box-shadow: -1px 6px 25px -1px rgba(199,189,199,1);
+     box-shadow: -1px 6px 25px -1px rgba(199,189,199,1);
+    border-radius: 10px;
+ }
+ 
+ 
+ .input100 {
+    
+     font-size: 14px;
+     color:black;
+     line-height: 1.1;
+     border: none;
+     display: block;
+     width: 100%;
+     height: 1.3rem;
+     background: transparent;
+     
+   }
+ 
+ 
+ .wrap-login100 {
+     display: flex;
+     padding-left: 10%;
+     height: auto;
+     background:transparent;
+     border-radius: 10px;
+     overflow: hidden;
+ 
+   }
+ 
+ 
+ .wrap-input100 {
+     width: 160%;
+     position: relative;
+     border-bottom: 2px solid #d9d9d9;
+   }
+   
+   .label-input100 {
+     font-family: 'Roboto', sans-serif;
+     font-size: 14px;
+     font-weight: 700;
+     color:#323333;
+     line-height: 1.7;
+   
+   }
+   .password-section{
+     margin-top: 1rem;
+   }
+   .eye-review{
+     display: flex;
+     
+   
+   }
+   .icon-review{
+     color: #636a6e;
+     padding-right: .5rem;
+   }
+   /*---------------------------------------------*/
+  
+   
+  
+   
+ 
+ .icon-btn{
+   border: transparent;
+   background-color: transparent;
+ }
+   .login-form-btn {
+     width: 300px;
+     position: absolute;
+     z-index: -1;
+     height: 100%;
+     background: #2C92C7;  
+     color: #fff;
+     column-gap: #fff;  
+     border: none;
+     border-radius: 5px;
+     top: 0;
+     box-shadow: 0 px 30px 0px rgba(3, 216, 222, 0.2);
+     -moz-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+     -webkit-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+     -o-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+     -ms-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+   }
+   
+  
+   .wplb{
+     position: relative;
+   z-index: 1;
+   margin-top: 30px;
+  
+   }
+ 
+   // .label-input100:active{
+   //   border: none;
+   //   outline:none;
+   // }
+ 
+   .input100:focus
+   {
+       border: transparent;
+       box-shadow: transparent;
+       outline-offset: 0px;
+       outline: none;
+   }
+ 
+ .container-btn {
+    
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: flex;   
+     margin-top: 1%;
+   }
+   
+ 
+ 
+ 

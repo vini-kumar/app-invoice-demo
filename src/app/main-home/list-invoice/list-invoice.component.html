@@ -1,0 +1,119 @@
+<div class="hominv">
+    <div class="container-fluid  p-0  flex-row">
+     
+        
+       <!-- <app-reports-dashboard></app-reports-dashboard> -->
+     <!-- <div class="admin-1">
+          <a href="">admin</a>
+         
+     </div> -->
+       
+      
+         <div class="home">
+        <div  class="pb-2">  <i class="icon-home c-1"></i><span class="c-1 f14">Invoices/Invoice-details</span> </div>
+            
+
+        <div class="" >
+            <table class="table ">
+                <thead class="bg-light">
+                  <tr>    
+                    <th scope="col">CUSTOMER NAME</th>
+                    <th scope="col">ADDRESS</th>
+                    <th scope="col">GST  NUMBER</th>
+                    <th scope="col">GST TYPE</th>
+                    <th scope="col">DESCRIPTION</th>
+                    <th scope="col">ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr *ngFor="let row of reportsData" (click)="sumary()">
+                   
+                    <td>{{row.customerName}}</td>
+                    <td>{{row.address}}</td>
+                    <td>{{row.gstno}}</td>
+                    <td>{{row.gsttype}}</td>
+                    <td>{{row.description}}</td>
+                    
+                    <td><i class="icon-delete"></i></td>
+                    <!-- <td><i class="icon-edit"  [routerLink]="['/home/invoice-list/invoice-docs']">edit</i></td> -->
+                  </tr>
+                  <tr (click)="sumary()">
+                    <td scope="row">Customer Name 2</td>
+                    <td>No.05,street  name , 15thcross,</td>
+                    <td>27AAICC108G1ZZ</td>
+                    <td>Intra-state supplies</td>
+                    <td>invoice Description</td>
+                    <td><i class="icon-delete"></i></td>
+                  </tr>
+                  
+                 
+                  <tr>
+                    <td scope="row">Customer Name 7</td>
+                    <td>No.05,street  name , 15thcross,</td>
+                    <td>27AAICC108G1ZZ</td>
+                    <td>Intra-state supplies</td>
+                    <td>invoice Description</td>
+                    <td><i class="icon-delete"></i></td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Customer Name 8</td>
+                    <td>No.05,street  name , 15thcross,</td>
+                    <td>27AAICC108G1ZZ</td>
+                    <td>Intra-state supplies</td>
+                    <td>invoice Description</td>
+                    <td><i class="icon-delete"></i></td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Customer Name 9</td>
+                    <td>No.05,street  name , 15thcross,</td>
+                    <td>27AAICC108G1ZZ</td>
+                    <td>Intra-state supplies</td>
+                    <td>invoice Description</td>
+                    <td><i class="icon-delete"></i></td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Customer Name 10</td>
+                    <td>No.05,street  name , 15thcross,</td>
+                    <td>27AAICC108G1ZZ</td>
+                    <td>Intra-state supplies</td>
+                    <td>invoice Description</td>
+                    <td><i class="icon-delete"></i></td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Customer Name 11</td>
+                    <td>No.05,street  name , 15thcross,</td>
+                    <td>27AAICC108G1ZZ</td>
+                    <td>Intra-state supplies</td>
+                    <td>invoice Description</td>
+                    <td><i class="icon-delete"></i></td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Customer Name 12</td>
+                    <td>No.05,street  name , 15thcross,</td>
+                    <td>27AAICC108G1ZZ</td>
+                    <td>Intra-state supplies</td>
+                    <td>invoice Description</td>
+                    <td><i class="icon-delete"></i></td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Customer Name 13</td>
+                    <td>No.05,street  name , 15thcross,</td>
+                    <td>27AAICC108G1ZZ</td>
+                    <td>Intra-state supplies</td>
+                    <td>invoice Description</td>
+                    <td><i class="icon-delete"></i></td>
+                  </tr>
+                
+                </tbody>
+              </table>
+        </div>
+       </div>
+      
+      
+    </div>
+</div>
+
+
+
+

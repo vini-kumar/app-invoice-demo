@@ -1,0 +1,60 @@
+.pl{
+    padding-left: 25%;
+}
+
+
+.invoice-sheet-1{
+    width: 100%;
+}
+
+
+p {margin: 0; padding: 0;}	.ft10{font-size:14px;font-family:Times;color:#548dd4;}
+	.ft11{font-size:25px;font-family:Times;color:#000000;}
+	.ft12{font-size:16px;font-family:Times;color:#000000;}
+	.ft13{font-size:22px;font-family:Times;color:#000000;}
+	.ft14{font-size:16px;font-family:Times;color:#000000;}
+	.ft15{font-size:14px;font-family:Times;color:#000000;}
+	.ft16{font-size:13px;font-family:Times;color:#000000;}
+	.ft17{font-size:16px;font-family:Times;color:#0563c1;}
+	.ft18{font-size:19px;font-family:Times;color:#000000;}
+	.ft19{font-size:14px;font-family:Times;color:#000000;}
+	.ft110{font-size:16px;line-height:22px;font-family:Times;color:#000000;}
+	.ft111{font-size:16px;line-height:25px;font-family:Times;color:#000000;}
+	.ft112{font-size:13px;line-height:21px;font-family:Times;color:#000000;}
+	.ft113{font-size:14px;line-height:21px;font-family:Times;color:#000000;}
+
+
+
+
+
+
+
+
+
+
+
+
+//
+table{
+    width: 900px;
+}
+
+
+table,
+td {
+  border: solid 2px black;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.bold~tr td {
+  border: solid 1px lightgray;
+}
+
+td {
+  padding: 0.5em;
+}
+
+[colspan="4"][rowspan="2"] {
+  height: 6em;
+}

@@ -1,0 +1,105 @@
+<p  style="padding-left: 300px; padding-top: 50px;">reports</p>
+<div style="padding-left: 300px;  width: 1200px;">
+    <div class="d-flex justify-content-center mt-3">
+        <div class="form-1">
+         <form [formGroup]="formValue"> 
+          <div class=" row ">
+            <label  class="col-sm-2 fw-5">Customer Name</label>
+            <div class="col-sm-10">
+              <input type="text" class=" w-50 Ucase" formControlName="customerName" >
+            </div>
+          </div>
+        
+          
+          <div class=" row ">
+            <label  class="col-sm-2 fw-5">cust adress</label>
+            <div class="col-sm-10">
+              <input type="text" class=" w-50 Ucase" formControlName="customerAddress" >
+            </div>
+            
+          </div>
+          <div class=" row ">
+            <label  class="col-sm-2 fw-5">inv Number</label>
+            <div class="col-sm-10">
+              <input type="text" class=" w-50 Ucase" formControlName="invoiceNumber"   >
+            </div>
+          </div>
+          
+          <div class=" row ">
+            <label  class="col-sm-2 fw-5">GST </label>
+            <div class="col-sm-10">
+              <input type="textarea" class=" w-50 Ucase" formControlName="gst" >
+            </div>
+          </div>
+        
+                
+               
+                
+              
+               
+                <div class=" row mt-5">
+                  <div class="col-sm-10">
+                    <!-- <button type="submit"  (click)="postReports()"  class="btn btn-primary">+ ADD</button> -->
+                  </div>
+                  <!-- <p  class="btn btn-danger" *ngIf="showUpdate" (click)="updateReports()" >update</p> -->
+                </div>
+              </form>
+        
+            <div >
+        
+        <!-- <table  class="table table-dark">
+          <tr>
+            <th scope="col">Invoice Number</th>
+            <th scope="col">Base Amount</th>
+            <th scope="col">Total Gst</th>
+            <th scope="col">Total Amount</th>
+          </tr>
+          <tr *ngFor="let user of users">
+            <td>{{user.inputEmail3}}</td>
+            <td>{{user.inputEmail4}}</td>
+            <td>{{user.inputPassword5}}</td>
+            <td>{{user.inputEmail6}}</td>
+          </tr>
+        </table> -->
+        
+            </div>
+        </div>
+        
+        
+           
+        
+        
+        
+        </div>
+
+<table class="table mt-3">
+    <thead>
+
+        <tr>
+            <th scope="col">customer name</th>
+            <th scope="col">customer Adrress</th>
+            <th scope="col">invoice  No</th>
+            <th scope="col">Gst No</th>
+            <th scope="col">Total Gst</th>
+            <th scope="col">Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of reportsData">
+             <td>{{row.id}}</td>
+             <td>{{row.customerName}}</td>
+             <td>{{row.customerAddress}}</td>
+             <td>{{row.invoiceNumber}}</td>
+             <td>{{row.gst}}</td>
+        
+        
+       
+       
+
+    <button class="btn btn-info" (click)="onEdit(row)">Edit</button>
+        <button class="btn btn-danger mx-2" (click)="deleteReport(row)">Delete</button>
+     </tr>
+    </tbody>
+
+</table>
+</div>

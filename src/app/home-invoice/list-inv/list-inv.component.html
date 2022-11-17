@@ -1,0 +1,192 @@
+
+<div class="container pl-1">
+
+    <!-- <input type="text" [(ngModel)]="currentMsgToChild1"> -->
+  
+  
+  
+      <div class="d-flex justify-content-center mt-3">
+  <div class="form-1">
+   <form>
+    <div class="form-group row ">
+      <label  class="col-sm-2 fw-5">Customer Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control w-50 Ucase" name="custname" ngModel>
+      </div>
+    </div>
+  
+    
+    <div class="form-group row ">
+      <label  class="col-sm-2 fw-5">Invoice Number</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control w-50 Ucase" name="inputEmail3" ngModel>
+      </div>
+      
+    </div>
+    <div class="form-group row ">
+      <label  class="col-sm-2 fw-5">PO Number</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control w-50 Ucase" name="ponumb" ngModel>
+      </div>
+    </div>
+    
+    <div class="form-group row ">
+      <label  class="col-sm-2 fw-5">Address </label>
+      <div class="col-sm-10">
+        <input type="textarea" class="form-control w-50 Ucase" name="Add1" ngModel>
+      </div>
+    </div>
+  
+    
+          <div class="form-group row ">
+            <label  class="col-sm-2 fw-5">Payment Terms</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control w-50 Ucase" name="PaymentTerms" ngModel>
+            </div>
+          </div>
+           <div class="form-group row ">
+            <label  class="col-sm-2 fw-5">HSN/SAC Number</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control w-50 Ucase" name="hsn" ngModel>
+            </div>
+          </div>
+          <div class="form-group row ">
+            <label  class="col-sm-2 fw-5">Description</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control w-50 Ucase" name="description" ngModel>
+            </div>
+          </div>
+          <div class="form-group row ">
+            <label  class="col-sm-2 fw-5">Quantity</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control w-50 Ucase" name="quantity" ngModel>
+            </div>
+          </div>
+          <div class="form-group row ">
+            <label  class="col-sm-2 fw-5">Unit Price</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control w-50 Ucase" name="uprice" ngModel>
+            </div>
+          </div>
+         
+          <div class="form-group row">
+              <label for="inputEmail4" class="col-sm-2 col-form-label fw-5">Base Amount</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control w-50" name="inputEmail4" ngModel>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword5" class="col-sm-2 col-form-label fw-5">Total Gst</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control w-50" name="inputPassword5" ngModel>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail6" class="col-sm-2 col-form-label fw-5">Total Amount</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control w-50" name="inputEmail6" ngModel>
+              </div>
+            </div>
+          
+        
+         
+          <div class=" row mt-5">
+            <div class="col-sm-10">
+              <button type="submit" class="btn btn-primary">+ ADD</button>
+            </div>
+            <p  class="btn btn-danger"  >view details</p>
+          </div>
+        </form>
+  
+      <div >
+  
+  <table  class="table table-dark">
+    <tr>
+      <th scope="col">Invoice Number</th>
+      <th scope="col">Base Amount</th>
+      <th scope="col">Total Gst</th>
+      <th scope="col">Total Amount</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>{{user.inputEmail3}}</td>
+      <td>{{user.inputEmail4}}</td>
+      <td>{{user.inputPassword5}}</td>
+      <td>{{user.inputEmail6}}</td>
+    </tr>
+  </table>
+  
+      </div>
+  </div>
+   <div class="col-sm-4"> 
+    <div class="jumbotron  p-2 m-0 bg-inverse"> 
+   
+          <h1 class="text-center">Calculator</h1>
+       
+          
+          <div class="input-group input-group-sm col-sm-12 m-0 p-0">
+            <div class="col-sm-12 form-control text-lg-right" type="text">{{input}}</div>
+          </div>
+       
+          <span>Output</span>
+          <div class="input-group input-group-sm col-sm-12 m-0 p-0">
+            <div class="form-control text-sm-right" type="text">{{result}}</div>
+          </div>
+       
+          <div class="col-sm-12 p-1 m-0">
+            <button class="btn btn-info col-sm-6" type="button" (click)="allClear()">C</button>
+            <button class="btn btn-warning col-sm-3" type="button" (click)="clear()">x</button>
+            <button class="btn btn-secondary col-sm-3" type="button" (click)="pressOperator('/')">/</button>
+          </div>
+       
+          <div class="col-sm-12 p-1 m-0">
+            <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('7')">7</button>
+            <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('8')">8</button>
+            <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('9')">9</button>
+            <button class="btn btn-lg btn-secondary col-sm-3 p-1" type="button" (click)="pressOperator('*')">X</button>
+          </div>
+          <div class="col-sm-12 p-1 m-0">
+            <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('4')">4</button>
+            <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('5')">5</button>
+            <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('6')">6</button>
+            <button class="btn btn-lg btn-secondary col-sm-3 p-1" type="button" (click)="pressOperator('-')">-</button>
+          </div>
+          <div class="col-sm-12 p-1 m-0">
+            <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('1')">1</button>
+            <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('2')">2</button>
+            <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('3')">3</button>
+            <button class="btn btn-lg btn-secondary col-sm-3 p-1" type="button" (click)="pressOperator('+')">+</button>
+          </div>
+          <div class="col-sm-12 p-1 m-0">
+            <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('.')">.</button>
+            <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1" type="button" (click)="pressNum('0')">0</button>
+            <button class="btn btn-lg btn-success col-sm-6 p-1" type="button" (click)="getAnswer()">=</button>
+          </div>
+      </div> 
+      </div>
+  
+     
+  
+  
+  
+      <!-- <div class="pdf-viewer"> <form action="/action_page.php">
+                  <label for="myfile"><span>Add Invoice files</span> </label>
+                  <input type="file" id="myfile" name="myfile" multiple><br><br>
+                 
+                </form>
+  
+      <div class="d-flex  btn-cont">
+             
+             <div class="download a">
+                  <span>
+                      <button>Download<i class=" icon-low "></i></button>
+                  </span>
+              </div>            
+          </div>
+      </div> -->
+  </div>
+  
+  </div>
+  
+  <!-- <app-invoice-sheet (movieSelectedEventEmitter)="selectedMovieToWatch($event)" 
+  [movieList]="myFavoriteMovies"></app-invoice-sheet> -->
+  

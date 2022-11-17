@@ -1,0 +1,31 @@
+.fs-24{
+    font-size: 24px;
+}
+
+
+.navbar{
+ width: 65rem;
+ left:300px;
+}
+
+.title-invoice{
+    color: #0d478a;
+    font-size: 24px;
+    font-weight: 600;
+    // text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-plus{
+    border-radius: 50%;
+    border-color: red;
+    color: white;
+    background-color: red;
+
+}
+.search-container{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
